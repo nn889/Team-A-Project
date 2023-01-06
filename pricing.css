@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------  Heading ----------*/
+.heading{
+    width: 100%;
+    height: 50vh;
+    /* background-color: #181D31; */
+    background-color: #1b2344;
+    color: #F2E5E5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fb a,.tw a, .gh a, .dis a{
+    color: rgb(7, 63, 161);
+}
+.yt a
+{
+    color: #d03232;
+}
+.heading h1{
+    font-size: 2.5rem;
+}
+
+
+.heading p{
+    font-size: 1.2rem;
+    line-height: 50px;
+}
+
+.heading p a{
+    text-decoration: none;
+    color: #F2E5E5;
+    transition: all ease 0.2s;
+}
+
+.heading p a:hover{
+    /* color: #CE7777; */
+    color: #73FFF1;
+    border-bottom: 1px solid #73FFF1;
+}
+
+/*----------- Features -----------*/
+.fetaures-container{
+    width: 100%;
+    height: 55vh;
+    background-color: #E7F6F2;
+    color: #2B3A55;
+}
+
+.fetaures-container h1{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.features{
+    padding: 0 200px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features .feature{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature i{
+    font-size: 5rem;
+    color: #1c1c1c;
+}
+
+/* ------------ Plans --------------- */
+.plans{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #2B3A55; */
+    background-color: #1b2344;
+}
+
+.plans h1{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 20vh;
+    color: #F2E5E5;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 22%;
+    height: 60vh;
+    padding: 20px;
+    /* background-color: #3A4F7A; */
+    background-color: #222d57;
+    margin: 0 15px;
+    box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.3);
+    border-radius: 3%;
+
+    transition: all ease 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+.card h3{
+    color: #F2E5E5;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+
+.card .price{
+    font-size: 2rem;
+    color: #F2E5E5;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #E7F6F2;
+    margin-bottom: 15px;
+}
+
+.card .price sub{
+    font-size: 1rem;
+    color: #F2E5E5;
+}
+
+.card .list{
+    list-style-type: none;
+    color: #F2E5E5;
+}
+
+.card .list li{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .list i{
+    font-size: 1.2rem;
+    width: 8%;
+    margin: 10px;
+}
+
+.fa-check{
+    color: #0ea835;
+}
+
+.fa-xmark{
+    color: #d03232;
+}
+
+.card a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #F2E5E5;
+    /* background-color: #CE7777; */
+    background-color: #e35a5a;
+    margin: 25px auto auto auto;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+}
+
+.card a:hover{
+    background-color: #BAD7E9;
+    color: #3A4F7A;
+}
+
+/* Aung Hein's Footer */
+.f1{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 25px 0; */
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 2.4rem;
+
+    margin: 30px 0;
+}
+p{
+    font-size: 1rem;
+}
+
+small{
+    /* margin-left: 555px; */
+    display: block;
+    text-align: center;
+}

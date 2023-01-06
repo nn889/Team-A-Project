@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="nav&footer.css" rel="stylesheet" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #font {
+            font-family: 'Moon Dance', cursive;
+
+        }
+
+        #font {
+            font-size: 1.3em;
+            color: #fff;
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: -29px;
+            width: 330px;
+        }
+
+        /* width: 100%; */
+        /* height: 60px; */
+        /* background-color: #2c3332; */
+
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+
+        nav {
+            width: 100%;
+
+            /* position: fixed; */
+            top: 0;
+            z-index: 9999;
+            height: 60px;
+            background-color: #2c3332;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div ul {
+            width: 650px;
+            list-style-type: none;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav img {
+            margin-left: 0px;
+            width: 80px;
+            height: 80px;
+            /* margin-bottom: px; */
+        }
+
+        div ul li {
+            color: #fff;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            transition: all 0.2s;
+        }
+
+        div ul li a {
+            color: #ccc6c6;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 10px 20px;
+            transition: all 0.2s;
+        }
+
+
+        nav ul li a:hover {
+
+            color: #fff;
+            background-color: #395B64;
+        }
+
+        .f1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            font-size: 2.4rem;
+
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        small {
+            margin-left: 555px;
+        }
+
+
+
+        main {
+            margin: 100px;
+
+        }
+
+        body {
+            background: #1b2344;
+        }
+
+        .spotlight {
+            margin-top: 100px;
+
+        }
+
+        .spotlight .con1,
+        .con2 {
+            /* background-color: aquamarine; */
+            width: 420px;
+            height: 200px;
+            gap: 20px;
+            /* margin: 30px; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .con2 {
+            width: 1000px;
+        }
+
+        .content,
+        .content1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .h2np {
+            height: 50px;
+            width: 223px;
+        }
+
+        .h2np a {
+            text-decoration: none;
+        }
+
+        .h2np a h2:hover {
+            color: rgb(247, 182, 108);
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+        .h2np a h2:focus {
+            color: rgb(5, 51, 51);
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #E7F6F2;
+        }
+
+        .body p,
+        .body h1 {
+            font-weight: 600;
+            width: 36%;
+        }
+
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #E7F6F2;
+        }
+
+        h2 {
+            color: #DCD7C9;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #E7F6F2;
+            font-family: cursive;
+            font-size: 0.8em;
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .section3 {
+            height: 500px;
+            /* padding-top: 30px; */
+        }
+
+        section {
+            padding-top: 100px;
+        }
+
+        #logo p {
+            font-size: 1.3em;
+        }
+    </style>
+    <title>K-pop</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div id="logo">
+            <img src="img/MUSICIONS_CORNER.png" alt="logo" />
+            <p id="font">MUSICIONS CORNER</p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-magnifying-glass">Explore</i></a>
+                </li>
+                <li>
+                    <a href="pricing.html"><i class="fa-solid fa-shop">Subscription</i></a>
+                </li>
+                <li>
+                    <a href="pricing.html"><i class="fa-solid fa-address-book">Contact</i></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-user">Sign up</i></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-circle-user">Log in</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spotlight">
+
+        <div class="body">
+            <h1>
+                Rap
+            </h1>
+            <!-- <p>Spotlight</p> -->
+        </div>
+        <div class="con1"><a href="dance.html"> <img
+                    src="https://th.bing.com/th/id/OIF.fZrvLy2rVRm7YHXArKtraA?w=195&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"><a
+                    href=""> <img
+                        src="https://th.bing.com/th/id/OIF.V5GS2BV9BRngUgITEC94MQ?w=250&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+
+
+
+        </div>
+        <div class="content">
+            <div class="h2np">
+                <a href="">
+                    <h2>Sweetheart Pop</h2>
+                </a>
+            </div>
+            <div class="h2np">
+                <a href="">
+                    <h2>
+
+                        Cuffin' Season</h2>
+                </a>
+            </div>
+        </div>
+        <section>
+
+            <h1>Featured Playlist</h1>
+            <div class="con2">
+                <a href=""> <img
+                        src="https://th.bing.com/th?id=OIF.j6E5T4dww1D54SuK%2bDd5PA&w=269&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                <a href=""> <img
+                        src="https://th.bing.com/th?id=OIF.Be65VjYsT2ZSjQB%2b3wIEew&w=278&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                <a href=""><img
+                        src="https://th.bing.com/th/id/OIP.-xgb8ljE3PzPTc8T3uD7UAHaE8?w=281&h=188&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                <a href=""><img
+                        src="https://th.bing.com/th/id/OIF.HkmgX80E7KyLv7TWiihw0Q?w=315&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    <a href="">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.spSUgHf1CPN_KOPRVva0JQAAAA?w=213&h=214&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a><a href=""></a>
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIF.5GpUUlWQYroDLW89h4EaMw?w=177&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+
+
+            </div>
+            <div class="content1">
+
+                <div class="h2np">
+
+
+                    <a href="">
+                        <h2>
+
+                            Bollywood Rap Aaj Kal</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+                    <a href="">
+                        <h2>Endless summer</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+
+                    <a href="">
+                        <h2>
+
+                            Bachata
+                            Rap</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+                    <a href="">
+                        <h2>
+
+                            Classical Romance</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+                    <a href="">
+                        <h2>
+
+                            Khaleeji
+                            Rap Songs </h2>
+                    </a>
+                </div>
+                <div class="h2np"><a href="">
+                        <h2>
+
+                            Iraqi
+                            Rap Songs</h2>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <h1>Essentials Playlist</h1>
+            <div class="con2">
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.F7biBoYiN4CZpdO7JKB0RQHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.cXVyaIAoyjt__o2A3tRAYAAAAA?w=119&h=181&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+                <a href=""><img
+                        src="https://th.bing.com/th/id/OIP.fb_O3D75FgMRji_lJI5D3AAAAA?w=161&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.VQ-m8gcHM6_eP-jNsUWKJAHaHa?w=160&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.oSyBtcNj_xTwB2tPeHemWAHaEK?w=210&h=181&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.CmFE6Ebc19QwMq_a20goEwAAAA?w=188&h=189&c=7&r=0&o=5&dpr=1.6&pid=1.7 ">
+                </a>
+
+            </div>
+            <div class="content1">
+
+                <div class="h2np">
+                    <a href="">
+                        <h2>
+                            Rap-HITLIST</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>
+
+                            Bollywood
+                            Rap Moments</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>BEAT ON</h2>
+                    </a>
+                </div>
+                <div class="h2np"><a href="">
+                        <h2>SWAG ON</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>Groove On</h2>
+                    </a>
+                    <!-- <p>LUCY, Ha Hyunsang, Pateko, Jayci Yucca</p> -->
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>
+
+
+                            Rap Songs</h2>
+                    </a>
+                    <!-- <p>BoA, Girls' Generation, 2NE1, Wonder Girls</p> -->
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="section3">
+                <h1>Community Playlist</h1>
+                <div class="con2">
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.6ugrBUdwzX2spZ0i5Ok5LQHaHa?w=157&h=187&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.4ThbtRpRxMJoy2qwQpoXDgHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.AMRHYooYIho5iDeR7s6QDgHaHZ?w=158&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+                    <a href=""><img
+                            src="https://th.bing.com/th/id/OIP.66WR-iTcYwCu_MTVY3YRNgHaDV?w=309&h=157&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+                    <a href=""><img
+                            src="https://th.bing.com/th/id/OIP.sFsh8WyHqHutjLzMbYygiwHaHa?w=157&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+
+
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.CXyN37_hPRPFf4VUF0QmPwHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+
+                    <!-- https://th.bing.com/th/id/OIP.Ihf1z2lkSsMr6ti11MHjmgHaE7?w=203&h=135&c=7&r=0&o=5&dpr=1.3&pid=1.7 -->
+
+                </div>
+                <div class="content1">
+
+                    <div class="h2np">
+                        <a href="">
+                            <h2>
+
+                                I'm a Rapper</h2>
+                        </a>
+                        <!-- <p>Blckpink,aespa,TWICE,ITZY</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>Hip Hop Rap</h2>
+                        </a>
+                        <!-- <p>WINNER, WJSN, BTS, OH MY GIRL</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>Country Rap Songs</h2>
+                        </a>
+                        <!-- <p>Blckpink,aespa,TWICE,ITZY</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>
+
+                                Cuddling Rap</h2>
+                        </a>
+                        <!-- <p>aespa,NMIXX,IVE,Kep1er</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>Rap Wedding</h2>
+                        </a>
+                        <!-- <p>Blckpink,aespa,TWICE,ITZY</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>
+
+                                Bad Gal Rap</h2>
+                        </a>
+                        <!-- <p>aespa,NMIXX,IVE,Kep1er</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

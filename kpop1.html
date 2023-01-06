@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainroom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="nav&footer.css" rel="stylesheet" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #font {
+            font-family: 'Moon Dance', cursive;
+
+        }
+
+
+        body {
+            margin-left: 100px;
+            background: #1b2344;
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: -60px;
+            width: 330px;
+            /* height: 60px; */
+            /* background-color: #fff; */
+        }
+
+        nav p {
+
+            width: 330px;
+            /* height: 20px; */
+            /* background-color: #fff; */
+            /* margin-right: 150px; */
+        }
+
+        nav {
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            height: 60px;
+            background-color: #2c3332;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            margin-left: 60px;
+            width: 100px;
+            height: 85px;
+            margin-bottom: 5px;
+        }
+
+        div ul {
+            width: 650px;
+            list-style-type: none;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div ul li {
+            color: #fff;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            transition: all 0.2s;
+        }
+
+        div ul li a {
+            color: #ccc6c6;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 10px 20px;
+            transition: all 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #395B64;
+        }
+
+        .f1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            font-size: 2.4rem;
+
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        #logo p {
+            font-size: 1.3em;
+        }
+
+        small {
+            margin-left: 555px;
+        }
+
+        .intro {
+            display: flex;
+        }
+
+        h1 {
+            margin: 20px 0;
+            display: block;
+            padding-top: 30px;
+        }
+
+        /* .title h1,
+        .title p {
+            display: flex;
+            flex-direction: row;
+        } */
+        p,
+        .foot h1 {
+            color: #fff;
+        }
+
+        .title {
+            color: #fff;
+            /* background-color: aqua; */
+            /* width: 600px;
+            height: 550px; */
+            margin-left: 30px;
+
+        }
+
+        img {
+            display: inline;
+            padding-top: 5px;
+        }
+
+        .title h1,
+        .title p {
+            margin-top: 5px;
+        }
+
+        .b {
+            display: flex;
+        }
+
+        .btn1 button,
+        .btn button {
+            /* border: 1px solid #000;
+
+            border-radius: 33px; */
+            border: none;
+            background-color: #474f4c;
+            /* padding: 5px 5px; */
+            /* width: 100px; */
+
+            font-size: 0.9em;
+
+            color: #fff;
+        }
+
+
+        .btn1 {
+            margin-left: 10px;
+            color: #000;
+
+        }
+
+        .btn1,
+        .btn {
+            margin-top: 30px;
+
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-top: 30px;
+            display: flex;
+            flex-direction: row;
+
+            border: 1px solid #000;
+
+            border-radius: 33px;
+            background-color: #474f4c;
+            padding: 5px 5px;
+            width: 120px;
+        }
+
+        #shu img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        #songs p {
+            text-align: left;
+            width: 150px;
+        }
+
+        #songs h2 {
+            font-size: 1em;
+            text-align: left;
+            width: 100px;
+        }
+
+        #songs a,
+        .con2 a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #songs a:hover,
+        .con2 a:hover {
+            /* text-decoration: underline; */
+            color: #98c1cd;
+        }
+
+        #songs {
+
+            margin-top: 60px;
+            justify-content: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con2 {
+            /* background-color: aquamarine; */
+            width: 420px;
+            height: 200px;
+            gap: 20px;
+            /* margin: 30px; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .h2np {
+            height: 250px;
+            width: 220px;
+            color: #fff;
+        }
+
+        .h2np a {
+
+            text-decoration: none;
+        }
+
+
+        .h2np a h2:hover {
+            color: rgb(147, 164, 164);
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+        .h2np a h2:focus {
+            color: rgb(5, 51, 51);
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+
+        .content1 {
+            display: flex;
+            flex-direction: row;
+
+            margin-top: 10px;
+        }
+
+        .foot {
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        #main {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <nav>
+
+            <div id="logo">
+                <img src="img/MUSICIONS_CORNER.png" alt="logo" />
+                <p id="font">MUSICIONS CORNER</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-solid fa-magnifying-glass">Explore</i></a>
+                    </li>
+                    <li>
+                        <a href="pricing.html"><i class="fa-solid fa-shop">Subscription</i></a>
+                    </li>
+                    <li>
+                        <a href="pricing.html"><i class="fa-solid fa-address-book">Contact</i></a>
+                    </li>
+                    <li>
+                        <a href="login.html"><i class="fa-solid fa-user">Sign up</i></a>
+                    </li>
+                    <li>
+                        <a href="login.html"><i class="fa-solid fa-circle-user">Log in</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass">Explore</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-shop">Subscription</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-address-book">Contact</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user">Sign up</i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-circle-user">Log in</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main">
+        <div class="intro">
+            <div class="img">
+                <img src="https://th.bing.com/th/id/OIP.vKT421ZwBnfAxdr7g_BbCgHaHa?w=160&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                    alt="K-RISING">
+            </div>
+
+            <div class="title">
+                <h1>K-RISING</h1>
+                <P>
+                    Playlist • Music • 2023
+                </P>
+                <p>10 songs : 3hours,32 minutes</p>
+                <p>Guide to the state of K-Pop rising stars, from the seminal to the undiscovered.
+
+                </p>
+                <div class="b">
+                    <div class="btn">
+                        <div id="shu">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                            <button type="button">Shuffle </button>
+                        </div>
+                    </div>
+                    <!-- <id class="material-icons">Shuffle</id> -->
+                    <div class="btn1">
+                        <div id="shu">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <button type="button">Add to library </button>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <section>
+            <div id="songs">
+                <a href="ks1.html">
+                    <h2>Freeze Tag
+                    </h2>
+                </a>
+                <p>TO1</p>
+                <p>5:00</p>
+            </div>
+            <div id="songs">
+
+                <a href="">
+                    <h2>
+                        OMG</h2>
+                </a>
+                <P>NewJeans</P>
+                <p>3:00</p>
+            </div>
+            <div id="songs">
+
+                <a href="">
+                    <h2>After LIKE</h2>
+                </a>
+                <p>IVE</p>
+                <p>4:00</p>
+            </div>
+            <div id="songs">
+
+                <a href="">
+                    <h2>Ditto</h2>
+                </a>
+                <p>NewJeans</p>
+
+                <p>5:00</p>
+            </div>
+            <div id="songs">
+                <a href="">
+                    <h2>ANTIFRAGILE</h2>
+                </a>
+                <p>LE SSERAFIM</p>
+
+                <p>5:00</p>
+            </div>
+            <div id="songs">
+                <a href="">
+                    <h2>Hype Boy</h2>
+                </a>
+                <p>NewJeans</p>
+
+                <p>5:00</p>
+
+            </div>
+            <div id="songs">
+                <a href="">
+
+                    <h2>LOVE DIVE</h2>
+                </a>
+                <p>IVE</p>
+
+                <p>5:00</p>
+            </div>
+            <div id="songs">
+
+                <a href="">
+                    <h2>DICE</h2>
+                </a>
+                <p>NMIXX</p>
+                <p>5:00</p>
+            </div>
+            <div id="songs">
+                <a href="">
+                    <h2>HELLO</h2>
+                </a>
+
+                <p>TREASURE</p>
+                <p>5:00</p>
+            </div>
+        </section>
+        <section>
+            <div class="foot">
+                <h1>Related Playlist</h1>
+                <div class="con2">
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.f6XhfO-hebLmmS7Gof08LQHaHa?w=175&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                            alt="TWICE"></a>
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.94BMTeDrwSEZzhX4bMZSNAHaFF?w=281&h=193&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                            alt="AEspa"></a>
+                    <a href=""><img
+                            src="https://th.bing.com/th/id/OIP.zwn4OxKfB4ZDrq64SsOFdgHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                            alt="aespa"></a>
+                    <a href=""><img
+                            src="https://th.bing.com/th/id/OIP.h4VUiv9TQ2Gak6imRHeGegHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                            alt="IU"></a>
+
+                    <a href="">
+                        <img src="https://th.bing.com/th/id/OIP.ruWhptm5xd0FRg-zz4hOPQHaFd?w=260&h=191&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                            alt="BTS">
+                </div>
+
+
+                <div class="content1">
+
+                    <div class="h2np">
+
+                        <h2>Funny K-Pop Dance</h2>
+                        <p>Blckpink,aespa,TWICE,ITZY</p>
+                    </div>
+                    <div class="h2np">
+                        <h2>Refreshing K-Pop</h2>
+                        <p>aespa,NMIXX,IVE,Kep1er</p>
+                    </div>
+                    <div class="h2np">
+
+                        <h2>K-HITLIST</h2>
+                        <p>Blckpink,aespa,TWICE,ITZY</p>
+                    </div>
+                    <div class="h2np">
+                        <h2>K-Pop Girl Crush</h2>
+                        <p>aespa,NMIXX,IVE,Kep1er</p>
+                    </div>
+                    <div class="h2np">
+
+                        <h2>Amp On</h2>
+                        <p>Blckpink,aespa,TWICE,ITZY</p>
+                    </div>
+
+                </div>
+            </div>
+</body>
+
+
+</html>

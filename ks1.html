@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ks1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="nav&footer.css" rel="stylesheet" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #font {
+            font-family: 'Moon Dance', cursive;
+
+        }
+
+        .main {
+            margin-top: 100px;
+
+        }
+
+        body {
+            background: #1b2344;
+        }
+
+
+        .con1 {
+            display: flex;
+            margin-left: 100px;
+        }
+
+
+        .con1 img {
+            width: 200px;
+            height: 200px;
+        }
+
+        * {
+            list-style: none;
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: -60px;
+            width: 330px;
+            /* height: 60px; */
+            /* background-color: #fff; */
+        }
+
+        .logo {
+            width: 95px;
+
+            /* height: 60px; */
+            /* background-color: #fff; */
+        }
+
+        nav p {
+
+            width: 330px;
+            /* height: 20px; */
+            /* background-color: #fff; */
+            /* margin-right: 150px; */
+        }
+
+        /* nav {
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            height: 60px;
+            background-color: #2c3332;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } */
+
+        #logo img {
+            margin-left: 60px;
+            width: 80px;
+            height: 80px;
+        }
+
+        div ul {
+            width: 650px;
+            list-style-type: none;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div ul li {
+            color: #fff;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            transition: all 0.2s;
+        }
+
+        div ul li a {
+            color: #ccc6c6;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 10px 20px;
+            transition: all 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #395B64;
+        }
+
+        .f1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            font-size: 2.4rem;
+
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        small {
+            margin-left: 555px;
+        }
+
+
+
+        .con1 #songs {
+
+            margin-left: 30px;
+            color: #fff;
+        }
+
+        audio {
+            margin-top: 20px;
+        }
+
+        .con1 #songs a,
+        .con1 p,
+        p {
+
+            text-decoration: none;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div id="logo">
+            <img src="img/MUSICIONS_CORNER.png" alt="logo" />
+            <p id="font">MUSICIONS CORNER</p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-magnifying-glass">Explore</i></a>
+                </li>
+                <li>
+                    <a href="pricing.html"><i class="fa-solid fa-shop">Subscription</i></a>
+                </li>
+                <li>
+                    <a href="pricing.html"><i class="fa-solid fa-address-book">Contact</i></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-user">Sign up</i></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-circle-user">Log in</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="con1"><a href="kpop1.html"> <img
+                    src="https://th.bing.com/th/id/OIP.692NJROAvSmEjdvTW1CDjwHaHa?w=198&h=198&c=7&r=0&o=5&dpr=1.6&pid=1.7"
+                    alt="K-RISING"></a>
+
+            <div id="songs">
+                <a href="ks1.html">
+                    <h2>Freeze Tag
+                    </h2>
+                </a>
+                <p>TO1</p>
+                <audio controls>
+                    <source src="music/sample1.mp3">
+
+                </audio>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

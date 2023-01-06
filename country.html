@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="nav&footer.css" rel="stylesheet" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #font {
+            font-family: 'Moon Dance', cursive;
+
+        }
+
+        body {
+            background: #1b2344;
+        }
+
+        main {
+            margin-left: 100px;
+        }
+
+        * {
+            list-style: none;
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: -60px;
+            width: 330px;
+            /* height: 60px; */
+            /* background-color: #fff; */
+        }
+
+        .logo {
+            width: 95px;
+
+            /* height: 60px; */
+            /* background-color: #fff; */
+        }
+
+        nav p {
+
+            width: 330px;
+            /* height: 20px; */
+            /* background-color: #fff; */
+            /* margin-right: 150px; */
+        }
+
+        nav {
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            height: 60px;
+            background-color: #2c3332;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo img {
+            margin-left: 60px;
+            width: 80px;
+            height: 80px;
+        }
+
+        div ul {
+            width: 650px;
+            list-style-type: none;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div ul li {
+            color: #fff;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            transition: all 0.2s;
+        }
+
+        div ul li a {
+            color: #ccc6c6;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            padding: 10px 20px;
+            transition: all 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #395B64;
+        }
+
+        .f1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            font-size: 2.4rem;
+
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        small {
+            margin-left: 555px;
+        }
+
+        .spotlight {
+            margin-top: 100px;
+        }
+
+        .spotlight .con1,
+        .con2 {
+            /* background-color: aquamarine; */
+            width: 420px;
+            height: 200px;
+            gap: 20px;
+            /* margin: 30px; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .content,
+        .content1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .h2np {
+            /* justify-content: space-between; */
+            /* background-color: #a9a7a3; */
+            height: 50px;
+            width: 222px;
+
+        }
+
+        .h2np a {
+
+            text-decoration: none;
+        }
+
+        .h2np a h2:hover {
+            color: #5f97a6;
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+        .h2np a h2:focus {
+            color: rgb(5, 51, 51);
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #E7F6F2;
+        }
+
+        .body p,
+        .body h1 {
+            font-weight: 600;
+
+        }
+
+        h1 {
+            /* margin-top: 40px; */
+            margin-bottom: 20px;
+            color: #E7F6F2;
+        }
+
+        h2 {
+            color: #DCD7C9;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #E7F6F2;
+            font-family: cursive;
+            font-size: 0.8em;
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .section3 {
+            height: 500px;
+            /* padding-top: 30px; */
+        }
+
+        section {
+            padding-top: 100px;
+        }
+
+        #logo p {
+            font-size: 1.3em;
+        }
+    </style>
+    <title>Country</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div id="logo">
+            <img src="img/MUSICIONS_CORNER.png" alt="logo" />
+            <p id="font">MUSICIONS CORNER</p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href=""><i class="fa-solid fa-magnifying-glass">Explore</i></a>
+                </li>
+                <li>
+                    <a href="pricing.html"><i class="fa-solid fa-shop">Subscription</i></a>
+                </li>
+                <li>
+                    <a href="pricing.html"><i class="fa-solid fa-address-book">Contact</i></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-user">Sign up</i></a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-circle-user">Log in</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="spotlight">
+
+        <div class="body">
+            <h1>
+                COUNTRY
+            </h1>
+            <!-- <p>Spotlight</p> -->
+        </div>
+        <div class="con1"><a href="dance.html"> <img
+                    src="https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/5e/27/e8/5e27e8a1-74f8-2add-853e-d434eae2e740/5059460131491.jpg/600x600bb.jpg"></a>
+            <a href=""> <img
+                    src="https://th.bing.com/th/id/OIP.iXxCEWnUdfZKK9Ou07j5ogHaHa?w=161&h=184&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+
+
+
+
+        </div>
+        <div class="content">
+            <div class="h2np">
+                <a href="">
+                    <h2>Sweetheart Country</h2>
+                </a>
+            </div>
+            <div class="h2np">
+                <a href="">
+                    <h2>
+
+                        Country Season</h2>
+                </a>
+            </div>
+        </div>
+        <section>
+
+            <h1>Featured Playlist</h1>
+            <div class="con2">
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.qFky-0_j9Ubgny6sWHPicQAAAA?w=158&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.-BJHN-A_opqSA-6GSff8TQHaFj?w=209&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                <a href=""><img
+                        src="https://th.bing.com/th/id/OIP.d1Fi5MfY9-GkXny9Si-biAHaE8?w=237&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                <a href=""><img
+                        src="https://th.bing.com/th/id/OIP.5b38-uyP2EIY0i5lmjGeQgHaBP?w=284&h=61&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+
+                <a href="">
+                    <img
+                        src="https://th.bing.com/th/id/OIP.rsM9AQ68jYj5nblODGS80wHaEK?w=248&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a><a href=""></a>
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.Ha2K8pBWqkO0lV8kmXQj7QHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+
+
+            </div>
+            <div class="content1">
+
+                <div class="h2np">
+
+
+                    <a href="">
+                        <h2>
+
+                            Bollywood dance Aaj Kal</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+                    <a href="">
+                        <h2>Endless Country</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+
+                    <a href="">
+                        <h2>
+
+                            Bachata Country</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+                    <a href="">
+                        <h2>
+
+                            Classical Country</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+
+                    <a href="">
+                        <h2>
+
+                            Khaleeji dance Songs </h2>
+                    </a>
+                </div>
+                <div class="h2np"><a href="">
+                        <h2>
+
+                            Iraqi Country Songs</h2>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section>
+
+            <h1>Essentials Playlist</h1>
+            <div class="con2">
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.kI4qYVgb9p2L_l1qj8hJ6gHaEl?w=255&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+                <a href=""> <img
+                        src="https://images.wideopencountry.com/wp-content/uploads/2022/09/GettyImages-1402251330-1024x683.jpg">
+                </a>
+                <a href=""><img
+                        src="https://th.bing.com/th/id/OIP.MuPFuSYp7p_dkIwS-oqBCgHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.2j8mm2cq9jIrJJXiIdGongHaDt?w=343&h=174&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.b6cWAmUO7P8PsIIpFCviZgHaD4?w=328&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                </a>
+
+                <a href=""> <img
+                        src="https://th.bing.com/th/id/OIP.scUgG3xZHomI9F_wcNyjjwAAAA?w=171&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7 ">
+                </a>
+
+            </div>
+            <div class="content1">
+
+                <div class="h2np">
+                    <a href="">
+                        <h2>Country-HITLIST</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>
+
+                            Bollywood Country Moments</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>BEAT ON</h2>
+                    </a>
+                </div>
+                <div class="h2np"><a href="">
+                        <h2>SWAG ON</h2>
+                    </a>
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>Groove On</h2>
+                    </a>
+                    <!-- <p>LUCY, Ha Hyunsang, Pateko, Jayci Yucca</p> -->
+                </div>
+                <div class="h2np">
+                    <a href="">
+                        <h2>
+
+                            Country Songs</h2>
+                    </a>
+                    <!-- <p>BoA, Girls' Generation, 2NE1, Wonder Girls</p> -->
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="section3">
+                <h1>Community Playlist</h1>
+                <div class="con2">
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.bkrhIIWA7CQ1lNUkhoPmMwHaKe?w=121&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"></a>
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.L-6H2uNmW9UD5GuOnBbSxAHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.gJprc6Bf-ZSlTqLgIzGtmQHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+                    <a href=""><img
+                            src="https://th.bing.com/th/id/OIP.-lpvZo_8MaGwmGgKGadwFAHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+                    <a href=""><img
+                            src="https://th.bing.com/th/id/OIP.Hide1W-Ru2MlqNZbwnKO7AHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+
+
+                    <a href=""> <img
+                            src="https://th.bing.com/th/id/OIP.vAXLcggG1Vs0MsYcL1sQxwHaFj?w=233&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7">
+                    </a>
+
+                    <!-- https://th.bing.com/th/id/OIP.Ihf1z2lkSsMr6ti11MHjmgHaE7?w=203&h=135&c=7&r=0&o=5&dpr=1.3&pid=1.7 -->
+
+                </div>
+                <div class="content1">
+
+                    <div class="h2np">
+                        <a href="">
+                            <h2>
+
+                                a country </h2>
+                        </a>
+                        <!-- <p>Blckpink,aespa,TWICE,ITZY</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>country dance</h2>
+                        </a>
+                        <!-- <p>WINNER, WJSN, BTS, OH MY GIRL</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>Country Songs</h2>
+                        </a>
+                        <!-- <p>Blckpink,aespa,TWICE,ITZY</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>
+
+                                Cuddling country </h2>
+                        </a>
+                        <!-- <p>aespa,NMIXX,IVE,Kep1er</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>country Wedding</h2>
+                        </a>
+                        <!-- <p>Blckpink,aespa,TWICE,ITZY</p> -->
+                    </div>
+                    <div class="h2np">
+                        <a href="">
+                            <h2>
+
+                                Bad Gal dance</h2>
+                        </a>
+                        <!-- <p>aespa,NMIXX,IVE,Kep1er</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
